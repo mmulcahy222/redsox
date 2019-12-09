@@ -1,0 +1,90 @@
+@font-face{ 
+	font-family: 'Blacklight';
+	src: url('WebFont.eot');
+	src: url('blacklight/5peero-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('blacklight/5peero-webfont.woff') format('woff'),
+	     url('blacklight/5peero-webfont.ttf') format('truetype'),
+	     url('blacklight/5peero-webfont.svg#webfont') format('svg');
+}
+
+body
+{
+	margin: 0px;
+	background-color: black;
+}
+.header
+{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border-collapse: separate;
+    border-spacing: 45px 0px;
+}
+
+.header_item
+{
+	display:table-cell;
+	color; #ED2734;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: "Blacklight",Arial;
+  text-shadow: 0px 1px 1px #F22245;
+  font-size: 30px;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: black;
+}
+
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ED2734;
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  background-color:black;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #ED2734;
+  color: black;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  color:yellow;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  text-shadow: 0px 1px 1px black;
+}
+.container
+{
+	padding:10px 250px;
+	height:100%;
+}
+.external_site
+{
+	border: 3px groove #ED2734;
+	width:100%;
+	height:475px;
+}
